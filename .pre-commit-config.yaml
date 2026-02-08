@@ -16,3 +16,10 @@ repos:
       - id: isort
         exclude: '^pytest/testdata|^test/simple_source'
         stages: [pre-commit]
+-   repo: https://github.com/psf/black
+    rev: 25.11.0
+    hooks:
+    - id: black
+      language_version: python3
+      stages: [pre-commit]
+      additional_dependencies: ["click"]
