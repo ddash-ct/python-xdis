@@ -13,6 +13,8 @@
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
+from __future__ import annotations
+
 import marshal
 import os.path as osp
 import py_compile
@@ -24,7 +26,6 @@ from datetime import datetime
 from os import close
 from struct import pack, unpack
 from types import CodeType
-from typing import Tuple, Dict
 
 import xdis.marsh
 import xdis.unmarshal
@@ -50,14 +51,14 @@ from xdis.version_info import PYTHON3, PYTHON_VERSION_TRIPLE, PythonImplementati
 
 @dataclass
 class PycModuleInfo:
-    tuple_version: Tuple[int, int]
+    tuple_version: tuple[int, int, int]
     timestamp: int
     magic_int: int
     co: CodeBase
     is_pypy: bool
     source_size: int
     sip_hash: int = None
-    file_offsets: Dict = field(default_factory=dict)
+    file_offsets: dict = field(default_factory=dict)
 
 
 def is_python_source(path) -> bool:
