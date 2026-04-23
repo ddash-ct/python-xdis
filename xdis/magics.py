@@ -710,7 +710,7 @@ add_magic_from_int(416, "3.11.13PyPy")  # PyPy 3.11.13 or pypy3.11-7.3.20
 
 add_magic_from_int(12641, "3.12.0a.rust")  # RustPython 3.12.0
 add_magic_from_int(12897, "3.12.0.rust")  # RustPython 3.12.0 0.4.0
-add_magic_from_int(13413, "3.13.0a.rust")  # RustPython 3.13.0
+add_magic_from_int(134, "3.13.0a.rust")  # RustPython 3.13.0
 add_magic_from_int(24881, "3.13.0b.rust")  # RustPython 3.13.0 0.4.0
 
 # Actually we should add 3531, but that already means CPython 3.12!
@@ -863,7 +863,7 @@ add_canonic_versions(
 )
 
 add_canonic_versions(
-    "3.13 3.13.0 3.13.1 3.13.2 3.13.3 3.13.4 3.13.5 3.13.6 3.13.7 3.13.8 3.13.9 3.13.10 3.13.11 3.13.12",
+    "3.13 3.13.0 3.13.1 3.13.2 3.13.3 3.13.4 3.13.5 3.13.6 3.13.7 3.13.8 3.13.9 3.13.10 3.13.11 3.13.12 3.13.13",
     "3.13.0rc3",
 )
 
