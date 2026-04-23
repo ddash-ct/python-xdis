@@ -19,7 +19,7 @@ import py_compile
 import sys
 import tempfile
 import types
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from os import close
 from struct import pack, unpack
